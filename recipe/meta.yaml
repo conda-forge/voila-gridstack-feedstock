@@ -27,7 +27,7 @@ test:
     - test -f "${PREFIX}/share/jupyter/voila/templates/gridstack/nbconvert_templates/voila.tpl"
 
 about:
-  home: https://github.com/QuantStack/voila-gridstack
+  home: https://github.com/voila-dashboards/voila-gridstack
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE

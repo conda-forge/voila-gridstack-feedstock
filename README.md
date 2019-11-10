@@ -1,7 +1,7 @@
 About voila-gridstack
 =====================
 
-Home: https://github.com/QuantStack/voila-gridstack
+Home: https://github.com/voila-dashboards/voila-gridstack
 
 Package license: BSD-3-Clause
 
@@ -116,5 +116,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@SylvainCorlay](https://github.com/SylvainCorlay/)
+* [@maartenbreddels](https://github.com/maartenbreddels/)
 * [@scopatz](https://github.com/scopatz/)
 

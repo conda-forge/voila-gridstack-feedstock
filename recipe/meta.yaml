@@ -1,5 +1,5 @@
 {% set name = "voila-gridstack" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0d5bde632d38bc6bb00eb41bf104367267739d3324cb32f271a42c15ab8a9848
+  sha256: 8f4db6b71f192d31a1a094e3e704d4b34e72c29c446cbae54a336146db54005f
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Gridstack template for voila'
+  summary: 'Gridstack template for Voilà'
 
 extra:
   recipe-maintainers:

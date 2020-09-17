@@ -5,9 +5,9 @@ Home: https://github.com/voila-dashboards/voila-gridstack
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
-Summary: Gridstack template for voila
+Summary: Gridstack template for Voilà
 
 
 

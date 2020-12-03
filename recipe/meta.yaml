@@ -1,5 +1,5 @@
 {% set name = "voila-gridstack" %}
-{% set version = "0.0.11" %}
+{% set version = "0.0.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 851dafe1912199ba36ad5544fb0f624bcb1421d2d31c0f1d03fcdcbf6d626dee
+  sha256: 7c73e4373abc953cb16f708eafe6b09b11ecae7f130c2db233e184907894fdae
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Gridstack template for Voilà'
+  summary: Gridstack template for Voilà
 
 extra:
   recipe-maintainers:

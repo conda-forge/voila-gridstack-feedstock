@@ -1,5 +1,5 @@
 {% set name = "voila-gridstack" %}
-{% set version = "0.0.12" %}
+{% set version = "0.1.0rc0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7c73e4373abc953cb16f708eafe6b09b11ecae7f130c2db233e184907894fdae
+  sha256: c5eedba8236ee6871fcf64a5a931d095cd5eda156930bb7bfccac374c4589dac
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
 test:
   commands:
     - test -f "${PREFIX}/share/jupyter/nbconvert/templates/gridstack/index.html.j2"
+    - test -f "${PREFIX}/share/jupyter/labextensions/@voila-dashboards/jupyterlab-gridstack/package.json"
 
 about:
   home: https://github.com/voila-dashboards/voila-gridstack

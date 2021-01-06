@@ -27,6 +27,7 @@ test:
   commands:
     - test -f "${PREFIX}/share/jupyter/nbconvert/templates/gridstack/index.html.j2"
     - test -f "${PREFIX}/share/jupyter/labextensions/@voila-dashboards/jupyterlab-gridstack/package.json"
+    - test -f "${PREFIX}/share/jupyter/nbextensions/voila-gridstack/extension.js"
 
 about:
   home: https://github.com/voila-dashboards/voila-gridstack

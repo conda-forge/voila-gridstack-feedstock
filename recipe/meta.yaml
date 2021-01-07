@@ -1,5 +1,5 @@
 {% set name = "voila-gridstack" %}
-{% set version = "0.1.0r" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}

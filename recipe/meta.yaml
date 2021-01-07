@@ -1,5 +1,5 @@
 {% set name = "voila-gridstack" %}
-{% set version = "0.1.0rc0" %}
+{% set version = "0.1.0r" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8f6fd40b2cb49ce6304afe4239b3be9b7dfac8c1505ef76a48afee67da8ad731
+  sha256: d7a85b635ceccb1028e98bc2fd99fb9f19df4a819ac6c7bb5e1b9c4025a6adff
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
   run:
     - python >=3.6
     - voila >=0.2.0,<0.3
+    - jupyterlab_widgets >=1.0.0,<2.0.0
 
 test:
   commands:

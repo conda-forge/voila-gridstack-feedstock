@@ -1,13 +1,13 @@
 {% set name = "voila-gridstack" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fafc7eb8773ca07d2cec26da4547078071f628c056007f0cfaa73b19641c58ec
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 7b15668934337e39bd84f99feb6e44b1dc23e440f28844ce0e307caf7b7b461a
 
 build:
   noarch: python

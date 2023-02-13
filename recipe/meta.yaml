@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - jupyterlab =3
     - hatchling >=1.4
     - hatch-nodejs-version
     - hatch-jupyter-builder >=0.6.2

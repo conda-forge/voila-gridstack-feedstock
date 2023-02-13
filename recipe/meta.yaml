@@ -16,12 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
+    - nodejs =16
     - pip
-    - jupyterlab =3
     - hatchling >=1.4
     - hatch-nodejs-version
-    - hatch-jupyter-builder >=0.6.2
+    - hatch-jupyter-builder >=0.5
+    - jupyterlab =3.1
   run:
     - python >=3.6
     - voila >=0.2.0,<0.4

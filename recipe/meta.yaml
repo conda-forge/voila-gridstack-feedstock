@@ -18,11 +18,12 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - jupyter-packaging >=0.7.9
+    - hatchling >=1.4
+    - hatch-nodejs-version
   run:
     - python >=3.6
     - voila >=0.2.0,<0.4
-    - jupyterlab_widgets >=1.0.0,<2.0.0
+    - jupyterlab_widgets >=3.0.0,<4.0.0
 
 test:
   commands:

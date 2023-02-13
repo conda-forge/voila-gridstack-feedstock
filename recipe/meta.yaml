@@ -1,13 +1,13 @@
 {% set name = "voila-gridstack" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fafc7eb8773ca07d2cec26da4547078071f628c056007f0cfaa73b19641c58ec
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 7b15668934337e39bd84f99feb6e44b1dc23e440f28844ce0e307caf7b7b461a
 
 build:
   noarch: python
@@ -16,13 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
+    - nodejs =16
     - pip
-    - jupyter-packaging >=0.7.9
+    - hatchling >=1.4
+    - hatch-nodejs-version
+    - hatch-jupyter-builder >=0.5
+    - jupyterlab =3.1
   run:
     - python >=3.6
     - voila >=0.2.0,<0.4
-    - jupyterlab_widgets >=1.0.0,<2.0.0
+    - jupyterlab_widgets >=3.0.0,<4.0.0
 
 test:
   commands:

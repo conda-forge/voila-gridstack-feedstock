@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -24,8 +24,8 @@ requirements:
     - hatch-jupyter-builder >=0.5
     - jupyterlab =3.1
   run:
-    - python >=3.6
-    - voila >=0.2.0,<0.4
+    - python >=3.7
+    - voila >=0.2.0,<0.5.0
     - jupyterlab_widgets >=3.0.0,<4.0.0
 
 test:

@@ -147,5 +147,7 @@ Feedstock Maintainers
 * [@hbcarlos](https://github.com/hbcarlos/)
 * [@jtpio](https://github.com/jtpio/)
 * [@maartenbreddels](https://github.com/maartenbreddels/)
+* [@martinRenou](https://github.com/martinRenou/)
 * [@scopatz](https://github.com/scopatz/)
+* [@trungleduc](https://github.com/trungleduc/)
 

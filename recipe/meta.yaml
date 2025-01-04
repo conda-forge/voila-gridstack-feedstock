@@ -6,17 +6,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 1accf0dc584cdb988ca2b83f060bc7819bc774107796302e1feca6ab00e27a12
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - nodejs =16
     - pip
     - hatchling >=1.4
@@ -24,11 +24,13 @@ requirements:
     - hatch-jupyter-builder >=0.5
     - jupyterlab =4
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - voila >=0.2.0,<0.6.0
     - jupyterlab_widgets >=3.0.0,<4.0.0
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - test -f "${PREFIX}/share/jupyter/nbconvert/templates/gridstack/index.html.j2"
     - test -f "${PREFIX}/share/jupyter/labextensions/@voila-dashboards/jupyterlab-gridstack/package.json"
